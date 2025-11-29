@@ -33,7 +33,7 @@ def load_csv_to_bigquery(
             job_config=job_config
         )
 
-    print("Carregando dados...")
+    print("Carregando dados...\n")
     load_job.result()  # Espera o job terminar
 
     table = client.get_table(table_ref)
